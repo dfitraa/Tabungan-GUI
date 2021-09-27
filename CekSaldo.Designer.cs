@@ -54,6 +54,7 @@ namespace TabunganGUI
             this.label2.Size = new System.Drawing.Size(65, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
@@ -86,6 +87,7 @@ namespace TabunganGUI
             this.Controls.Add(this.label1);
             this.Name = "CekSaldo";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.CekSaldo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

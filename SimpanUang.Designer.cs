@@ -31,7 +31,6 @@ namespace TabunganGUI
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -52,16 +51,6 @@ namespace TabunganGUI
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(314, 27);
             this.textBox1.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(34, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Bersihkan";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -90,11 +79,11 @@ namespace TabunganGUI
             this.ClientSize = new System.Drawing.Size(374, 450);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "SimpanUang";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.SimpanUang_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,7 +93,6 @@ namespace TabunganGUI
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }
